@@ -1,0 +1,231 @@
+/* 使用字體 open sans */
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+/* 使用字體 Merriweather */
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Shade');
+.title {
+    color: royalblue;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 60px;
+}
+
+
+/* 基礎設定 */
+
+.row.no-padding [class^="col-"] {
+    padding: 0;
+}
+
+section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.section.no-margin {
+    padding: 0;
+}
+
+section.primary {
+    background-color: #F05F40;
+}
+
+section.default {
+    background-color: #222;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #F05F40;
+    max-width: 50px;
+}
+
+
+/* Primary-color: #F05F40 */
+
+
+/* 設定字體 */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a {
+    font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+    color: #222;
+    text-align: center;
+}
+
+p {
+    font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+    color: #777;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+p:first-child {
+    background-color: rgba(133, 229, 37, 0.4);
+}
+
+nav a {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+
+/* buttons */
+
+.btn {
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 100px;
+    background-color: white;
+    color: #222;
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.btn.primary {
+    background-color: #F05F40;
+    color: white;
+}
+
+
+/* TODO nav */
+
+nav {
+    width: 100%;
+    height: 50px;
+}
+
+
+/* TODO header */
+
+header {
+    width: 100%;
+    height: 600px;
+    background-color: #34ead5;
+    background: url('https://unsplash.it/1200/600?image=688') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left center;
+    cursor: pointer;
+}
+
+header .header-content {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .header-content h1,
+header .header-content p {
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+/* TODO introduction-section */
+
+
+/* TODO service-list-section */
+
+.service-icon {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.service-icon>i {
+    color: #e7ef20;
+}
+
+.service-icon>i {
+    color: #2cdd15;
+}
+
+.fixed-ad-box:hover {
+    background-color: #c4ff3e;
+}
+
+
+/* TODO portfolio-section */
+
+.portfolio-photo {
+    width: 100%;
+    height: 400px;
+    border: 1px solid black;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portfolio-photo#portfolio-photo-1 {
+    background-image: url(../img/photo-1.jpg);
+}
+
+.portfolio-photo#portfolio-photo-2 {
+    background-image: url(../img/photo-2.jpg);
+}
+
+.portfolio-photo#portfolio-photo-3 {
+    background-image: url(../img/photo-3.jpg);
+}
+
+.portfolio-photo#portfolio-photo-4 {
+    background-image: url(../img/photo-4.jpg);
+}
+
+.portfolio-photo#portfolio-photo-4:hover {
+    width: 180%;
+}
+
+.portfolio-photo#portfolio-photo-5 {
+    left: 10px;
+    background-image: url(../img/photo-5.jpg);
+}
+
+.portfolio-photo#portfolio-photo-5:hover {
+    width: 450px;
+    height: 550px;
+}
+
+.portfolio-photo#portfolio-photo-6 {
+    background-image: url(../img/photo-6.jpg);
+    z-index: 10;
+}
+
+.portfolio-photo#portfolio-photo-6:hover {
+    width: 450px;
+    height: 550px;
+    z-index: 200;
+}
+
+
+/* TODO download-section */
+
+
+/* TODO footer */

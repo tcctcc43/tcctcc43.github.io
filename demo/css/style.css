@@ -1,0 +1,93 @@
+body {
+    background-color: #c0d9f5;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+}
+
+
+/* header */
+
+header.jumbotron {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://unsplash.it/400/200/?image=603');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header.jumbotron:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.25);
+    z-index: 1;
+}
+
+header.jumbotron>.header-content {
+    margin: 0 auto;
+    z-index: 3;
+}
+
+header.jumbotron>.header-content * {
+    text-align: center;
+    color: white;
+    margin: 0;
+    text-shadow: 0 1px 10px rgba(0, 0, 0, 0.25);
+}
+
+header.jumbotron>.header-content>h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+header.jumbotron>.header-content>p {
+    font-size: 26px
+}
+
+
+/* article */
+
+article {
+    padding: 10px 100px;
+}
+
+@media screen and (max-width: 667px) {
+    article {
+        padding: 10px 10px;
+    }
+}
+
+article * {
+    color: white;
+}
+
+article h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+article h3 {
+    font-style: italic;
+    font-size: 24px;
+    font-weight: 100;
+    text-align: center;
+}
+
+article p {
+    letter-spacing: 0.2px;
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+
+/* todo ad 廣告的code寫在這下面 */

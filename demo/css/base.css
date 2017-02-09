@@ -1,0 +1,66 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+/* 取消a標籤預設會存在的底線 */
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.bold {
+    text-transform: uppercase;
+}
+
+
+/* 取消按鈕focus的模糊藍邊 */
+
+button:focus {
+    outline: none;
+}
+
+.fixed-ad-box {
+    position: fixed;
+    z-index: 1000;
+    background-color: #eee;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+    right: 20px;
+    bottom: 20px;
+    transition: all 0.5s ease-in;
+}
+
+.close-ad-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.fixed-ad-box .shoes-picture {
+    position: absolute;
+    left: -30px;
+    top: 20px;
+    width: 120%;
+    transition: all 0.5s ease-in;
+}
+
+.fixed-ad-box .ad-title {
+    position: absolute;
+    bottom: 20px;
+    left: 10px;
+}
+
+.fixed-ad-box:hover {
+    background-color: #c4ff3e;
+}
+
+.fixed-ad-box:hover .shoes-picture {
+    width: 150%;
+}
