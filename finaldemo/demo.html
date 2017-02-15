@@ -1,32 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
-    <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.18.1/build/cssreset/cssreset-min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <title>title</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="https://andy19910102.github.io/css-basic/base.css">
     <link rel="stylesheet" href="css/demo_picstyle.css">
-    <!-- TODO 使用自定的responsive.css -->
     <link rel="stylesheet" href="css/responsive.css">
-    <!-- NOTE 使用style.css -->
-
     <link rel="stylesheet" href="css/style2.css">
-    <title>Dropdown Btn</title>
 </head>
 
 <body>
+    <nav>
 
-    <header>
+        <div class="nav-menu-btn">
+        </div>
+
+        <div class="nav-list">
+            <ul>
+                <li><a href="#demo">期末demo</a></li>
+                <li><a href="#info">個人資料</a></li>
+                <li><a href="#photo">個人相片</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">生活看板<span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#home">溫暖的家照片</a></li>
+                        <li><a href="#">選項 2</a></li>
+                        <li><a href="#">選項 3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">選項 4</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- NOTE header -->
+
+    <header id="demo">
+        <h1>fffff</h1>
         <h1 class="title">277期HTML課程期末demo</h1>
 
     </header>
+
     <h1> 個人介紹</h1>
 
-    <table cellspacing="0" cellpadding="0" align="center" border="0" style="color: rgb(79,79,79); line-height: 18px">
+
+    <table cellspacing="0" cellpadding="0" align="center" border="0" style="color: rgb(79,79,79); line-height: 18px" id="info">
         <tbody>
             <tr>
                 <td>
@@ -201,7 +228,7 @@
         </tbody>
     </table>
 
-    <h1> 個人相簿</h1>
+    <h1 id="photo"> 個人相簿</h1>
 
     <!--
     <div class="fixed-ad-box">
@@ -236,9 +263,75 @@
         </div>
     </section>
 
+    <h1 id="home">溫暖的家照片</h1>
 
+    <!--輪播開始-->
+    <div id="slideshow" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <!--輪播圖片或內容-->
+            <div class="item active">
+                <!--全版面大型看板開始-->
+                <div class="jumbotron">
+                    <div class="container">
+                        <div class="row"></div>
+                        <div class="col-md-6">
+                            <h1>舒服的家</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <p>溫暖高雅的沙發</p>
+                        </div>
+                    </div>
+                </div>
+                <!--全版面大型看板結尾-->
+            </div>
 
+            <div class="item">
+                <!--全版面大型看板開始-->
+                <div class="jumbotron" id="slide-2">
+                    <div class="container">
+                        <div class="row"></div>
+                        <div class="col-md-6">
+                            <h1>舒服的家</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <p>溫暖高貴的餐桌</p>
+                        </div>
+                    </div>
+                </div>
+                <!--全版面大型看板結尾-->
+            </div>
 
+            <div class="item">
+                <!--全版面大型看板開始-->
+                <div class="jumbotron" id="slide-3">
+                    <div class="container">
+                        <div class="row"></div>
+                        <div class="col-md-6">
+                            <h1>舒服的家</h1>
+                        </div>
+                        <div class="col-md-6">
+                            <p>溫暖典雅的床單</p>
+                        </div>
+                    </div>
+                </div>
+                <!--全版面大型看板結尾-->
+            </div>
+
+        </div>
+        <!--上一頁 下一頁 按鈕-->
+        <div class="control-btn">
+            <a href="#slideshow" class="left carousel-control" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+            <a href="#slideshow" class="right carousel-control" data-slide="next"><span class="glyphicon glyphicon-chevron-right" ></span></a>
+        </div>
+        <!--小圓點換頁-->
+        <ol class="carousel-indicators">
+            <li data-target="#slideshow" data-slide-to="0" class="active"></li>
+            <li data-target="#slideshow" data-slide-to="1"></li>
+            <li data-target="#slideshow" data-slide-to="2"></li>
+        </ol>
+    </div>
+    <!--輪播結尾-->
+    <script src="js/main.js"></script>
 
 </body>
 
